@@ -21,7 +21,7 @@ from main.views import *
 
 urlpatterns = [
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0)),
-    path('', admin.site.urls),
+    path('admin', admin.site.urls),
 
     path('contact-create/', ContactCreateAPIView.as_view()),
 ]
